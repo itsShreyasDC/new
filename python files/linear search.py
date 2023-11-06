@@ -8,7 +8,10 @@ for i in range(n):
     if key==a[i]:
         flag=1
         pos=i+1
-if flag==1:
+
+
+
+if flag==1 :
     print("Found at",pos)
 else:
     print("not found")
