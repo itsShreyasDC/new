@@ -1,0 +1,18 @@
+from tkinter import *
+frame=Tk()
+frame.geometry("300x300")
+frame.title("addition")
+def add():
+    res=int(e1.get())+int(e2.get())
+    Text.set(res)
+Text=StringVar()
+Label(frame,text="enter1").grid(row=0,column=0)
+Label(frame,text="enter2").grid(row=1,column=0)
+Label(frame,text="result").grid(row=2,column=0)
+Label(frame,text="",textvariable=Text).grid(row=2,column=1)
+e1=Entry(frame)
+e1.grid(row=0,column=1)
+e2=Entry(frame)
+e2.grid(row=1,column=1)
+Button(frame,text="add",command=add).grid(row=3,column=1)
+frame.mainloop()
